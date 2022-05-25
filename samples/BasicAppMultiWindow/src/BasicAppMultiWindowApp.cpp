@@ -3,6 +3,7 @@
 #include "cinder/gl/gl.h"
 #include "cinder/Rand.h"
 #include <list>
+#include"cinder/CinderImGui.h"
 
 using namespace ci;
 using namespace ci::app;
