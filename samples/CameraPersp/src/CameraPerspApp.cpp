@@ -56,7 +56,7 @@ class CameraPerspApp : public App {
 
 void CameraPerspApp::prepareSettings( Settings* settings )
 {
-	settings->setResizable( false );
+	settings->setResizable( true );
 }
 
 void CameraPerspApp::setup()
@@ -253,7 +253,6 @@ void CameraPerspApp::draw()
 	gl::viewport( 0.0f, 0.0f, getWindowWidth(), getWindowHeight() );
 	gl::setMatricesWindow( getWindowWidth(), getWindowHeight() );
 	gl::drawSolidRect( Rectf( 0.0f, 0.0f, 640, 480 ) );
-
 	mObjectFbo->unbindTexture();
 }
 
